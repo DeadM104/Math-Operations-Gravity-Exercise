@@ -1,0 +1,25 @@
+'''
+James Feliciano Garcia 
+11/15/21
+This program calculates the distance a suspended object falls","given a gravity and time
+'''
+print("This program calculates the distance a suspended object falls","given a gravity and time")
+import math
+
+gravity=input("Input constant of gravity in pixles per second²: ")# Get gravity from user
+
+gravity=int(gravity)# Convert string to int
+
+fps= input("Enter FPS: ")# Get fps from user
+
+fps = int(fps)# Convert string to int
+
+total_frames=input("enter program total freames: ")# Get number of frames from user
+
+total_frames =int(total_frames)#convert string to int
+
+time=total_frames/fps # Calculate time object is falling
+
+distance=.5*gravity*time**2 # Calculate distance in pixels objecthas fallen
+
+print("It will drop", distance, "pixels in", time, "seconds")   # Output time to user
